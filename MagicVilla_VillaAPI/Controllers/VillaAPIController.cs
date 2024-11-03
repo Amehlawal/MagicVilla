@@ -30,7 +30,7 @@ namespace MagicVilla_VillaAPI.Controllers
         {
             if (id == 0)
             {
-                _logger.LogError("Get Villa Error with Id" + id);
+                _logger.LogError("Get Villa Error with Id " + id);
                 return BadRequest();
             }
             var villa = VillaStore.villaList.FirstOrDefault(u => u.Id == id);
